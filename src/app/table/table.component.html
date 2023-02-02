@@ -1,0 +1,25 @@
+<div class="tableDiv">
+
+    <table class="table table-light px-2 table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Emaill</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.empcode }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.designation }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.location }}</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>
